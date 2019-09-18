@@ -2,7 +2,7 @@
 
 echo "Updating..."
 apt-get update
-apt-get install -y unzip wget gnupg gnupg2 gnupg1
+apt-get install -y unzip wget gnupg gnupg2 gnupg1 git
 ln -snf /usr/share/zoneinfo/$TZ /etc/localtime
 echo $TZ > /etc/timezone
 
