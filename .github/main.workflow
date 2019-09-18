@@ -11,6 +11,7 @@ action "DocFX - Generate TypeScript Documentation" {
     "GH_EMAIL",
   ]
   env = {
+    TARGET_PACKAGE = "@azure/storage-blob"
     TARGET_SOURCE_PATH = "typings/lib"
   }
 }
