@@ -20,5 +20,7 @@ action "DocFX - Build and publish documentation" {
   needs = ["DocFX - Generate TypeScript Documentation"]
   secrets = [
     "GITHUB_TOKEN",
+    "GH_USER",
+    "GH_EMAIL",
   ]
 }
