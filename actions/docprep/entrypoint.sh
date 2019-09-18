@@ -2,7 +2,7 @@
 
 echo "Updating..."
 apt-get update
-apt-get install -y git #unzip wget gnupg gnupg2 gnupg1
+apt-get install -y git unzip wget #gnupg gnupg2 gnupg1
 #ln -snf /usr/share/zoneinfo/$TZ /etc/localtime
 #echo $TZ > /etc/timezone
 
@@ -13,8 +13,8 @@ apt update
 apt install mono-complete --yes
 
 # Get DocFX
-#wget https://github.com/dotnet/docfx/releases/download/v2.39.1/docfx.zip
-#unzip docfx.zip -d _docfx
+wget https://github.com/dotnet/docfx/releases/download/v2.39.1/docfx.zip
+unzip docfx.zip -d _docfx
 
 cd docfx_project
 
@@ -22,6 +22,8 @@ cd docfx_project
 mono ../_docfx/docfx.exe
 
 cd ..
+
+rm -rf _docfx
 
 # Check in changes.
 git config --global user.email "$GH_EMAIL"
