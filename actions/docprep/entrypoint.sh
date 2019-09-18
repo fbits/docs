@@ -21,6 +21,6 @@ cd docfx_project
 mono ../_docfx/docfx.exe
 
 cd ..
-git add .
+git add *
 git commit -m "Update content."
-git push
+git push -u origin master
