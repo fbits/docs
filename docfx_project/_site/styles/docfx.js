@@ -347,14 +347,6 @@ $(function () {
     } else {
       $('#navbar ul a.active').parents('li').addClass(active);
       renderBreadcrumb();
-      showSearch();
-    }
-    
-    function showSearch() {
-      if ($('#search-results').length !== 0) {
-          $('#search').show();
-          $('body').trigger("searchEvent");
-      }
     }
 
     function loadNavbar() {
@@ -367,7 +359,10 @@ $(function () {
       if (tocPath) tocPath = tocPath.replace(/\\/g, '/');
       $.get(navbarPath, function (data) {
         $(data).find("#toc>ul").appendTo("#navbar");
-        showSearch();
+        if ($('#search-results').length !== 0) {
+          $('#search').show();
+          $('body').trigger("searchEvent");
+        }
         var index = navbarPath.lastIndexOf('/');
         var navrel = '';
         if (index > -1) {
@@ -382,6 +377,7 @@ $(function () {
             href = navrel + href;
             $(e).attr("href", href);
 
+            // TODO: currently only support one level navbar
             var isActive = false;
             var originalHref = e.name;
             if (originalHref) {
@@ -551,7 +547,7 @@ $(function () {
       if ($('footer').is(':visible')) {
         $(".sideaffix").css("bottom", "70px");
       }
-      $('#affix a').click(function(e) {
+      $('#affix a').click(function() {
         var scrollspy = $('[data-spy="scroll"]').data()['bs.scrollspy'];
         var target = e.target.hash;
         if (scrollspy && target) {
@@ -1136,15 +1132,8 @@ $(function () {
     }
 
     $(window).on('hashchange', scrollToCurrent);
-
-    $(window).load(function () {
-        // scroll to the anchor if present, offset by the header
-        scrollToCurrent();
-    });
-
-    $(document).ready(function () {
-        // Exclude tabbed content case
-        $('a:not([data-tab])').click(function (e) { delegateAnchors(e); });
-    });
+    // Exclude tabbed content case
+    $('a:not([data-tab])').click(delegateAnchors);
+    scrollToCurrent();
   }
 });
