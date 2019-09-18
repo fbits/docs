@@ -2,9 +2,9 @@
 
 echo "Updating..."
 apt-get update
-apt-get install -y unzip wget gnupg gnupg2 gnupg1 git
-ln -snf /usr/share/zoneinfo/$TZ /etc/localtime
-echo $TZ > /etc/timezone
+apt-get install -y git #unzip wget gnupg gnupg2 gnupg1
+#ln -snf /usr/share/zoneinfo/$TZ /etc/localtime
+#echo $TZ > /etc/timezone
 
 # Install Mono 
 apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
@@ -13,8 +13,9 @@ apt update
 apt install mono-complete --yes
 
 # Get DocFX
-wget https://github.com/dotnet/docfx/releases/download/v2.39.1/docfx.zip
-unzip docfx.zip -d _docfx
+#wget https://github.com/dotnet/docfx/releases/download/v2.39.1/docfx.zip
+#unzip docfx.zip -d _docfx
+
 cd docfx_project
 
 # Build docs
