@@ -24,6 +24,7 @@ mono ../_docfx/docfx.exe
 cd ..
 
 rm -rf _docfx
+rm -f docfx*.zip
 
 # Check in changes.
 git config --global user.email "$GH_EMAIL"
