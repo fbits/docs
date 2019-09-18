@@ -15,7 +15,7 @@ apt install mono-complete --yes
 # Get DocFX
 wget https://github.com/dotnet/docfx/releases/download/v2.39.1/docfx.zip
 unzip docfx.zip -d _docfx
-cd docs
+cd docfx_project
 
 # Build docs
 mono ../_docfx/docfx.exe
