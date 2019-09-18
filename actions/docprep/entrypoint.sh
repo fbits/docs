@@ -19,3 +19,8 @@ cd docfx_project
 
 # Build docs
 mono ../_docfx/docfx.exe
+
+cd ..
+git add .
+git commit -m "Update content."
+git push
