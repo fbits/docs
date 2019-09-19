@@ -1,6 +1,6 @@
 {
   "homepages": [],
-  "source_base_path": "/github/workspace/docfx_project",
+  "source_base_path": "C:/Users/caroline.sena.CURITIBA/source/DocFX-GitHub/docfx_project",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -9,19 +9,7 @@
       "output": {
         ".html": {
           "relative_path": "api/index.html",
-          "hash": "EFBUNp8nfORMMT/9qfaDXg=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "Toc",
-      "source_relative_path": "api/toc.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/toc.html",
-          "hash": "eWl/m2iB2mgjZPbLc4xDqw=="
+          "hash": "rpDfnHNiEbiFsHrW5oQK7Q=="
         }
       },
       "is_incremental": false,
@@ -33,10 +21,10 @@
       "output": {
         ".html": {
           "relative_path": "articles/intro.html",
-          "hash": "oulplDd4bW8jlLrrtORwAQ=="
+          "hash": "dfe8xBbthbvgWOXvG4fmvQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -57,10 +45,10 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "SkaVYJvbwK6YgkAXK4s2ow=="
+          "hash": "Pnp0Ka+f2knrGjNzNDvxLw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -69,7 +57,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "k+/dkjFuwAVS32HduMpmBw=="
+          "hash": "k7V/0exT3U0e8ltNoAiWPA=="
         }
       },
       "is_incremental": false,
@@ -80,17 +68,23 @@
     {
       "status": {
         "can_incremental": true,
-        "incrementalPhase": "build"
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0
       },
       "processors": {
-        "ConceptualDocumentProcessor": {
-          "can_incremental": true,
-          "incrementalPhase": "build"
-        },
         "TocDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 3,
+          "skipped_file_count": 3
         }
       }
     },
@@ -98,7 +92,9 @@
       "status": {
         "can_incremental": true,
         "details": "Can support incremental post processing.",
-        "incrementalPhase": "postProcessing"
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
       },
       "processors": {}
     }
