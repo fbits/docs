@@ -1,2 +1,2 @@
 # Docfx
-# Documentação utilizando DocFX
+Documentação utilizando DocFX
