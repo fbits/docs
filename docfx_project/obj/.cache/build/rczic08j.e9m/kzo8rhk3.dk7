@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <!--[if IE]><![endif]-->
 <html>
 	<meta charset="utf-8">
@@ -63,13 +63,13 @@
 	 <option value="/Docfx/styles/main_dark.css">Dark
 	</select>
 	
-	<h1 id="this-is-the-homepage">This is the <strong>HOMEPAGE</strong>.</h1>
+	<h1 id="this-is-the-homepage" sourcefile="index.md" sourcestartlinenumber="1">This is the <strong sourcefile="index.md" sourcestartlinenumber="1">HOMEPAGE</strong>.</h1>
 	
-<p>Refer to <a href="http://daringfireball.net/projects/markdown/">Markdown</a> for how to write markdown files.</p>
-<h2 id="quick-start-notes">Quick Start Notes:</h2>
-<ol>
-<li>Teste da integração</li>
-<li>Teste de temas</li>
+<p sourcefile="index.md" sourcestartlinenumber="2">Refer to <a href="http://daringfireball.net/projects/markdown/" sourcefile="index.md" sourcestartlinenumber="2">Markdown</a> for how to write markdown files.</p>
+<h2 id="quick-start-notes" sourcefile="index.md" sourcestartlinenumber="3">Quick Start Notes:</h2>
+<ol sourcefile="index.md" sourcestartlinenumber="4">
+<li sourcefile="index.md" sourcestartlinenumber="4">Teste da integração</li>
+<li sourcefile="index.md" sourcestartlinenumber="5">Teste de temas</li>
 </ol>
 
 </body>
