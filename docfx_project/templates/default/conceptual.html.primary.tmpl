@@ -1,10 +1,13 @@
 
 <body>
 	{{!Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license. See LICENSE file in the project root for full license information.}}
+	
+	<select id="theme" onchange="changeCSS()">
+	 <option value="/Docfx/styles/main.css">Default</option>
+	 <option value="/Docfx/styles/main_dark.css">Dark</option>
+	</select>
+	
 	{{!master(layout/_master.tmpl)}}
 	{{{rawTitle}}}
 	{{{conceptual}}}
-
-	<a href="#" onclick="changeCSS('/Docfx/styles/main.css');">STYLE 1</a> 
-	<a href="#" onclick="changeCSS('');">STYLE 2</a>
 </body>
