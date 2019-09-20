@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <!--[if IE]><![endif]-->
 <html>
 	<meta charset="utf-8">
@@ -29,8 +29,8 @@
                 <span class="icon-bar"></span>
               </button>
               
-              <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+              <a class="navbar-brand" href="index.html">
+                <img id="logo" class="svg" src="logo.svg" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -57,9 +57,13 @@
             <article class="content wrap" id="_content" data-uid="">
                 
 <body>
-	<h1 id="placeholder">PLACEHOLDER</h1>
+	<h1 id="this-is-the-homepage" sourcefile="index.md" sourcestartlinenumber="1">This is the <strong sourcefile="index.md" sourcestartlinenumber="1">HOMEPAGE</strong>.</h1>
 	
-<p>TODO: Add .NET projects to the <em>src</em> folder and run <code>docfx</code> to generate <strong>REAL</strong> <em>API Documentation</em>!</p>
+<p sourcefile="index.md" sourcestartlinenumber="2">Refer to <a href="http://daringfireball.net/projects/markdown/" sourcefile="index.md" sourcestartlinenumber="2">Markdown</a> for how to write markdown files.</p>
+<h2 id="quick-start-notes" sourcefile="index.md" sourcestartlinenumber="3">Quick Start Notes:</h2>
+<ol sourcefile="index.md" sourcestartlinenumber="4">
+<li sourcefile="index.md" sourcestartlinenumber="4">Add images to the <em sourcefile="index.md" sourcestartlinenumber="4">images</em> folder if the file is referencing an image.</li>
+</ol>
 
 
 	<a href="#" onclick="changeCSS('styles/main.css');">STYLE 1</a> 
@@ -73,7 +77,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/carolinesena/Docfx/blob/master/docfx_project/api/index.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/carolinesena/Docfx/blob/master/docfx_project/index.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
@@ -99,8 +103,8 @@
       </footer>
     </div>
     
-    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
-    <script type="text/javascript" src="../styles/docfx.js"></script>
-    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="styles/docfx.js"></script>
+    <script type="text/javascript" src="styles/main.js"></script>
   </body>
 </html>
