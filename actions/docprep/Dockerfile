@@ -1,4 +1,4 @@
-FROM debian:9.5-slim
+FROM ubuntu:18.04
 
 LABEL "com.github.actions.name"="DocFX - Build and publish documentation"
 LABEL "com.github.actions.description"="Builds and publishes documentation."
