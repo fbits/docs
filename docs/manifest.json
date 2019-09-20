@@ -12,7 +12,7 @@
           "hash": "l5Ud+TfTgX0VSKO6J06VsQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -24,7 +24,7 @@
           "hash": "oACUXQbKKLfflQzV8YapOw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -45,7 +45,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "yL3Ut2TFvXAETboIFwL89w=="
+          "hash": "XRJEPn5Eg1v/J8JbG2ZzrQ=="
         }
       },
       "is_incremental": false,
