@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <!--[if IE]><![endif]-->
 <html>
 	<meta charset="utf-8">
@@ -64,9 +64,9 @@
             <article class="content wrap" id="_content" data-uid="">
                 
 <body>
-	<h1 id="add-your-introductions-here">Add your introductions here!</h1>
+	<h1 id="add-your-introductions-here" sourcefile="articles/intro.md" sourcestartlinenumber="1">Add your introductions here!</h1>
 	
-<h2 id="testando-compilação">Testando compilação</h2>
+<h2 id="testando-compilação" sourcefile="articles/intro.md" sourcestartlinenumber="3">Testando compilação</h2>
 
 
 	<a href="#" onclick="changeCSS('/Docfx/styles/main.css');">STYLE 1</a> 
