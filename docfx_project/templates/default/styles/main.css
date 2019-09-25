@@ -312,6 +312,7 @@ blockquote {
     display: inline;
 }
 
+
 @media (min-width: 1600px){
     .container {
         width: 100%;
@@ -338,5 +339,4 @@ blockquote {
         white-space: nowrap;
         text-overflow: ellipsis;
     }
-    
 }
