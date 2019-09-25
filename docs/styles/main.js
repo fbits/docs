@@ -10,10 +10,18 @@ function changeCSS() {
 
 window.addEventListener('load', function() {
 	var path = window.location.pathname;
-	var page = path.split("/").pop();
-	var file = path.split(".").shift();
+
+	var pathSplit = path.split("/");
+	var file = '';
+	if (pathSplit[1] === "Docfx"){
+		pathSplit.splice(0,2);
+		file = pathSplit.join("/").split(".").shift();
+	}
+	else {
+		file = path.split(".").shift();
+	}
+
 	console.log(path);
-	console.log( page );
 
 	var request = new XMLHttpRequest();
 

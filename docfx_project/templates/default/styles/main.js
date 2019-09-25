@@ -22,7 +22,6 @@ window.addEventListener('load', function() {
 	}
 
 	console.log(path);
-	console.log( page );
 
 	var request = new XMLHttpRequest();
 
