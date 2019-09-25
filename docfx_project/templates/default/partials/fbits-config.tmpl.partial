@@ -1,7 +1,7 @@
 
 <select id="theme" onchange="changeCSS()" class="themes-menu">
-    <option value="/styles/main.css">Dark</option>
-    <option value="/styles/main_dark.css">Default</option>
+    <option value="{{_rel}}styles/main.css">Dark</option>
+    <option value="{{_rel}}styles/main_dark.css">Default</option>
 </select>
 
 <div class="content doc-info">
