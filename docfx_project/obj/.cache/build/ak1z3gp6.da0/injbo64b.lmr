@@ -14,7 +14,7 @@
 	  <link rel="stylesheet" href="../styles/docfx.vendor.css">
 	  <link rel="stylesheet" href="../styles/docfx.css">
 	  <link id="style" rel="stylesheet" href="../styles/main.css">
-	  <link rel="stylesheet" href="../styles/fbits-styles.css">
+	  <link rel="stylesheet" href="../styles/md-info.css">
 	  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	  <meta property="docfx:navrel" content="../toc.html">
 	  <meta property="docfx:tocrel" content="../toc.html">
@@ -36,7 +36,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="png" src="../logo.png" alt="" height="38pt" style="margin-top: 10%">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -62,19 +62,11 @@
         <div class="article row grid">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-                <!--<select id="theme" onchange="changeCSS()" class="themes-menu">
-    <option value="../styles/main.css">Claro</option>
-    <option value="../styles/main_dark.css">Escuro</option>
-</select>-->
-<div class="dropdown themes-menu">
-<button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Temas
-  </button>
-<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-    <button class="dropdown-item" onclick="changeCSS('../styles/main.css')">Claro</button>
-    <button class="dropdown-item" onclick="changeCSS('../styles/main_dark.css')">Escuro</button>
-</div>
-</div>
+                
+<select id="theme" onchange="changeCSS()" class="themes-menu">
+    <option value="../styles/main.css">Dark
+    <option value="../styles/main_dark.css">Default
+</select>
 
 <div class="content doc-info">
     <ul class="metadata page-metadata">
