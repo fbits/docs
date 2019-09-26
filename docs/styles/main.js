@@ -3,9 +3,19 @@
 //window.onload = getContributors;
 //window.onload = readingTime;
 
-function changeCSS() {
-	var theme = document.getElementById('theme').value
+function changeCSS(theme) {
+	//var theme = document.getElementById('theme').value
 	document.getElementById('style').setAttribute('href', theme);
+	localStorage.setItem('current-theme', theme.split('/').pop());
+}
+
+if (localStorage.getItem('current-theme') === 'main_dark.css'){
+
+	var script = document.currentScript;
+	var fullUrl = script.src.replace(location.origin, '').split('/');
+	var jsFile = fullUrl.pop();
+	var cssPath = fullUrl.join("/");
+	document.getElementById('style').setAttribute('href', cssPath + '/main_dark.css');
 }
 
 window.addEventListener('load', function() {
