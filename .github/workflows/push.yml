@@ -5,7 +5,6 @@ jobs:
     name: DocFX - Generate TypeScript Documentation
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/tsdocgen@master
     - name: DocFX - Generate TypeScript Documentation
       uses: ./actions/tsdocgen
       env:
