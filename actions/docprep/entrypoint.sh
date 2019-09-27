@@ -27,9 +27,6 @@ git config --global user.name "${GITHUB_ACTOR}"
 git config --global user.email "${GITHUB_ACTOR}@users.noreply.github.com"
 
 git add . --force
-#git status
-git remote rm origin || true
-git remote add origin "${remote_repo}"
 
 git commit -m "Deploy ${GITHUB_REPOSITORY} to ${GITHUB_REPOSITORY}:$remote_branch"
 git push --force "${remote_repo}" master:${remote_branch}
