@@ -8,11 +8,11 @@ apt-get install -y git unzip wget gnupg gnupg2 gnupg1
 git config --global user.email "$GH_EMAIL"
 git config --global user.name "$GH_USER"
 
-echo %GH_EMAIL
-echo %GH_USER
+echo "%GH_EMAIL"
+echo "%GH_USER"
 
 git init
 git add . --force
 #git status
 git commit -m "Update auto-generated documentation."
-git push origin HEAD:master
+git push origin master
