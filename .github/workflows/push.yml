@@ -16,7 +16,7 @@ jobs:
         TARGET_SOURCE_PATH: typings/lib
     - uses: ad-m/github-push-action@master
       with:
-        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        github_token: ${{ secrets.GITHUB_TOKEN }}
     - name: DocFX - Build and publish documentation
       uses: ./actions/docprep
       env:
