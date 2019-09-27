@@ -1,6 +1,6 @@
 #!/bin/sh -l
 
-echo "Updating..."
+:'echo "Updating..."
 apt-get update
 apt-get install -y git unzip wget gnupg gnupg2 gnupg1
 
@@ -20,7 +20,7 @@ mono ../_docfx/docfx.exe
 
 cd ..
 rm -rf _docfx
-rm -f docfx.zip
+rm -f docfx.zip'
 
 # Check in changes.
 git config --global user.email "$GH_EMAIL"
@@ -30,4 +30,4 @@ git init
 git add . --force
 #git status
 git commit -m "Update auto-generated documentation."
-git push --set-upstream origin master
+git push origin HEAD:master
