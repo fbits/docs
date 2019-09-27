@@ -11,7 +11,6 @@ git config --global user.name "$GH_USER"
 echo "%GH_EMAIL"
 echo "%GH_USER"
 
-git init
 git add . --force
 #git status
 git commit -m "Update auto-generated documentation."
