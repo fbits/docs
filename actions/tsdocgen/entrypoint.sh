@@ -18,16 +18,11 @@ echo "_package/node_modules/${TARGET_PACKAGE}/${TARGET_SOURCE_PATH}"
 rm -rf _package
 rm -rf _output.json
 
-remote_repo="https://${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
-remote_branch="master"
-
-git config --global user.name "${GITHUB_ACTOR}"
-git config --global user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+# Check in changes.
+git config --global user.email "$GH_EMAIL"
+git config --global user.name "$GH_USER"
 
 git add . --force
-#git status
-git remote rm origin || true
-git remote add origin "${remote_repo}"
-
-git commit -m "Deploy ${GITHUB_REPOSITORY} to ${GITHUB_REPOSITORY}:$remote_branch"
-git push --force "${remote_repo}" master:${remote_branch}
+git status
+git commit -m "Update auto-generated documentation."
+git push --set-upstream origin master
