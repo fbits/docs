@@ -9,6 +9,9 @@ jobs:
     - name: DocFX - Build and publish documentation
       uses: ./actions/docprep
       env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_ACTOR: ${{ secrets.GITHUB_ACTOR }}
+        GITHUB_REPOSITORY: ${{ secrets.GITHUB_REPOSITORY }}
         GH_EMAIL: ${{ secrets.GH_EMAIL }}
         GH_USER: ${{ secrets.GH_USER }}
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        
