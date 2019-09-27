@@ -14,6 +14,7 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         TARGET_PACKAGE: '@azure/storage-blob'
         TARGET_SOURCE_PATH: typings/lib
+    - uses: ad-m/github-push-action@master
     - name: DocFX - Build and publish documentation
       uses: ./actions/docprep
       env:
