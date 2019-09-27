@@ -20,13 +20,13 @@ cd ..
 rm -rf _docfx
 rm -f docfx.zip
 
-remote_repo="https://${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
-remote_branch="master"
+#remote_repo="https://${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+#remote_branch="master"
 
-git config --global user.name "${GITHUB_ACTOR}"
-git config --global user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+#git config --global user.name "${GITHUB_ACTOR}"
+#git config --global user.email "${GITHUB_ACTOR}@users.noreply.github.com"
 
-git add . --force
+#git add . --force
 
-git commit -m "Deploy ${GITHUB_REPOSITORY} to ${GITHUB_REPOSITORY}:$remote_branch"
-git push --force "${remote_repo}" master:${remote_branch}
+#git commit -m "Deploy ${GITHUB_REPOSITORY} to ${GITHUB_REPOSITORY}:$remote_branch"
+#git push --force "${remote_repo}" master:${remote_branch}
