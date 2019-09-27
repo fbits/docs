@@ -5,8 +5,8 @@ jobs:
     name: DocFX - Generate TypeScript Documentation
     runs-on: ubuntu-latest
     steps:
+    - uses: actions/checkout@master
     - name: DocFX - Build and publish documentation
-      uses: actions/checkout@master
       uses: ./actions/docprep
       env:
         GH_EMAIL: ${{ secrets.GH_EMAIL }}
