@@ -5,7 +5,7 @@ jobs:
     name: DocFX - Generate TypeScript Documentation
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@master
+    - uses: actions/tsdocgen@master
     - name: DocFX - Generate TypeScript Documentation
       uses: ./actions/tsdocgen
       env:
@@ -14,7 +14,7 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         TARGET_PACKAGE: '@azure/storage-blob'
         TARGET_SOURCE_PATH: typings/lib
-    - uses: ad-m/github-push-action@master
+    - uses: actions/docprep@master
     - name: DocFX - Build and publish documentation
       uses: ./actions/docprep
       env:
