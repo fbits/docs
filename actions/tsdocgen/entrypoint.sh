@@ -19,10 +19,10 @@ rm -rf _package
 rm -rf _output.json
 
 # Check in changes.
-git config --global user.email "$GH_EMAIL"
-git config --global user.name "$GH_USER"
+#git config --global user.email "$GH_EMAIL"
+#git config --global user.name "$GH_USER"
 
-git add . --force
-git status
-git commit -m "Update auto-generated documentation."
-git push --set-upstream origin master
+#git add . --force
+#git status
+#git commit -m "Update auto-generated documentation."
+#git push --set-upstream origin master
