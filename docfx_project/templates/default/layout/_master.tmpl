@@ -42,10 +42,14 @@
                 {{>partials/fbits-config}}
                 {{!body}}
             </article>
+            <div class="col-md-10">
+            {{>partials/disqus}}
+            </div>
           </div>
           {{^_disableAffix}}
           {{>partials/affix}}
           {{/_disableAffix}}
+          
         </div>
       </div>
       {{^_disableFooter}}

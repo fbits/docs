@@ -1,4 +1,4 @@
-FROM debian:9.5-slim
+FROM ubuntu-latest
 
 LABEL "com.github.actions.name"="DocFX - Generate TypeScript Documentation"
 LABEL "com.github.actions.description"="Generates TypeScript API documentation from an npm package."
