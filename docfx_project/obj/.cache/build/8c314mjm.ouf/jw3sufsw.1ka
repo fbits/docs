@@ -12,7 +12,10 @@
           
           <ul class="nav level1">
                 <li>
-                    <a href="artigos/intro.html" name="artigos/toc.html" title="Artigos">Artigos</a>
+                    <a href="intro.html" name="" title="Introdu&#231;&#227;o">Introdu&#231;&#227;o</a>
+                </li>
+                <li>
+                    <a href="proxy.html" name="" title="Integra&#231;&#227;o com o Proxy">Integra&#231;&#227;o com o Proxy</a>
                 </li>
           </ul>
       </div>

@@ -17,11 +17,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "articles/intro.md",
+      "source_relative_path": "artigos/intro.md",
       "output": {
         ".html": {
-          "relative_path": "articles/intro.html",
-          "hash": "C5i5aoxQWUlk7CBkonsnqw=="
+          "relative_path": "artigos/intro.html",
+          "hash": "YzAzegpxnh5CpMyubjIX6A=="
         }
       },
       "is_incremental": false,
@@ -29,11 +29,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "articles/proxy.md",
+      "source_relative_path": "artigos/proxy.md",
       "output": {
         ".html": {
-          "relative_path": "articles/proxy.html",
-          "hash": "rGuSHarveUvZoJy73XAigQ=="
+          "relative_path": "artigos/proxy.html",
+          "hash": "WQjPIq0bama+nPRyaWDMBQ=="
         }
       },
       "is_incremental": false,
@@ -41,10 +41,10 @@
     },
     {
       "type": "Toc",
-      "source_relative_path": "articles/toc.yml",
+      "source_relative_path": "artigos/toc.yml",
       "output": {
         ".html": {
-          "relative_path": "articles/toc.html",
+          "relative_path": "artigos/toc.html",
           "hash": "txqITzh+ov6n9OlgzqRsoQ=="
         }
       },
@@ -69,7 +69,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "k7V/0exT3U0e8ltNoAiWPA=="
+          "hash": "E/OUlH2uXDaDoroMh/8ahA=="
         }
       },
       "is_incremental": false,
@@ -85,18 +85,18 @@
         "skipped_file_count": 0
       },
       "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 4,
+          "skipped_file_count": 2
+        },
         "TocDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build",
           "total_file_count": 0,
           "skipped_file_count": 0
-        },
-        "ConceptualDocumentProcessor": {
-          "can_incremental": true,
-          "incrementalPhase": "build",
-          "total_file_count": 4,
-          "skipped_file_count": 4
         }
       }
     },
