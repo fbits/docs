@@ -1,0 +1,9 @@
+<div class="dropdown themes-menu">
+<button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Temas
+  </button>
+<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <button class="dropdown-item" onclick="changeCSS('{{_rel}}styles/main.css')">Claro</button>
+    <button class="dropdown-item" onclick="changeCSS('{{_rel}}styles/main_dark.css')">Escuro</button>
+</div>
+</div>

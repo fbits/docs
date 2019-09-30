@@ -60,7 +60,7 @@ window.addEventListener('load', function() {
 
 	var time = Math.ceil(count/200);
 
-	document.getElementById("time").innerHTML = time + (time === 1 ? " minuto" : " minutos");
+	document.getElementById("time").innerHTML = time + (time === 1 ? " minuto para ler" : " minutos para ler");
 });
 
 window.addEventListener('load', function() {

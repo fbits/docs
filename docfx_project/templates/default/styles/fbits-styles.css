@@ -61,7 +61,11 @@
 
 
 .themes-menu {
-    margin-left: 105%;
+    margin-left: 1%;
+}
+
+#dropdownMenuButton{
+    color: #ffffff;
 }
 
 .doc-info {
