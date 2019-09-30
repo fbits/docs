@@ -30,3 +30,6 @@ rm -f docfx.zip
 
 #git commit -m "Deploy ${GITHUB_REPOSITORY} to ${GITHUB_REPOSITORY}:$remote_branch"
 #git push --force "${remote_repo}" master:${remote_branch}
+
+header=$(echo -n "ad-m:${INPUT_GITHUB_TOKEN}" | base64)
+git -c http.extraheader="AUTHORIZATION: basic $header" push origin HEAD:master
