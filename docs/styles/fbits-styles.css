@@ -66,6 +66,9 @@
 
 #dropdownMenuButton{
     color: #ffffff;
+    background-color: #a0a0a0;
+    margin-left: 5%;
+    margin-bottom: 2%;
 }
 
 .doc-info {

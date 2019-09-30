@@ -4,6 +4,7 @@
   <div class="sideaffix">
     {{^_disableContribution}}
     <div class="contribution">
+    {{>partials/themes}}
       <ul class="nav">
         {{#docurl}}
         <li>

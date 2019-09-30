@@ -9,7 +9,7 @@
       "output": {
         ".html": {
           "relative_path": "api/index.html",
-          "hash": "Vre/LdaZ5K5bxvE+tY3C2Q=="
+          "hash": "ZhcUDdLbn6YMeQ+Ol7LCTw=="
         }
       },
       "is_incremental": false,
@@ -21,7 +21,7 @@
       "output": {
         ".html": {
           "relative_path": "artigos/intro.html",
-          "hash": "YzAzegpxnh5CpMyubjIX6A=="
+          "hash": "sJkPHpDmvcK3P6Agi220fA=="
         }
       },
       "is_incremental": false,
@@ -33,7 +33,7 @@
       "output": {
         ".html": {
           "relative_path": "artigos/proxy.html",
-          "hash": "WQjPIq0bama+nPRyaWDMBQ=="
+          "hash": "ypr0nI51YKrUMiWn4rCblw=="
         }
       },
       "is_incremental": false,
@@ -57,7 +57,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "xWG/X9xvR2fFegKRKeZvSQ=="
+          "hash": "tkBoKtGGkeyBFcropuJx5Q=="
         }
       },
       "is_incremental": false,
@@ -85,18 +85,18 @@
         "skipped_file_count": 0
       },
       "processors": {
-        "ConceptualDocumentProcessor": {
-          "can_incremental": true,
-          "incrementalPhase": "build",
-          "total_file_count": 4,
-          "skipped_file_count": 2
-        },
         "TocDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build",
           "total_file_count": 0,
           "skipped_file_count": 0
+        },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 4,
+          "skipped_file_count": 4
         }
       }
     },
