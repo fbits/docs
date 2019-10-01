@@ -9,5 +9,6 @@ LABEL "repository"="https://github.com/carolinesena/DocFX"
 LABEL "homepage"=""
 LABEL "maintainer"="Caroline Sena <caroline.sena@traycorp.com.br>"
 
+COPY entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
 RUN ["chmod", "+x", "/entrypoint.sh"]
