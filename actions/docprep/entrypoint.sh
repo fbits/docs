@@ -26,10 +26,9 @@ rm -f docfx.zip
 git config --global user.email "$GH_EMAIL"
 git config --global user.name "$GH_USER"
 
-git add . --force
-git status
+git add .
 git commit -m "Update auto-generated documentation."
-git push --set-upstream origin master
+git push origin master
 
 
 #remote_repo="https://${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
