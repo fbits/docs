@@ -1,2 +1,2 @@
-# Documentação TrayCorp utilizando Docfx
+# Documentação Docfx
 Documentação utilizando DocFX
