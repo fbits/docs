@@ -2,7 +2,7 @@
 
 # instala pacotes necessarios
 apt-get update
-apt-get install -y curl gnupg gnupg2 gnupg1 git
+apt-get install -y curl gnupg gnupg2 gnupg1 git unzip wget
 
 # instala nodejs
 curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
