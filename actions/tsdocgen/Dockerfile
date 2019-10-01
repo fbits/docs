@@ -1,4 +1,4 @@
-FROM ubuntu-18.04
+FROM ubuntu:18.04
 
 LABEL "com.github.actions.name"="DocFX - Generate TypeScript Documentation"
 LABEL "com.github.actions.description"="Generates TypeScript API documentation from an npm package."
