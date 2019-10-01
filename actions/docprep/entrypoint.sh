@@ -28,7 +28,7 @@ git config --global user.name "$GH_USER"
 
 git add .
 git commit -m "Update auto-generated documentation."
-git push origin master
+#git push origin master
 
 
 #remote_repo="https://${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
