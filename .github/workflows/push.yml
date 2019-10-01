@@ -1,22 +1,11 @@
 on: push
 name: Documentation Generation Workflow
 jobs:
-  docFX-GenerateTypeScriptDocumentation:
+  docFX-GenerateDocumentation:
     name: DocFX - Generate TypeScript Documentation
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
-    - name: DocFX - Generate TypeScript Documentation
-      uses: ./actions/tsdocgen
-      env:
-        GH_EMAIL: ${{ secrets.GH_EMAIL }}
-        GH_USER: ${{ secrets.GH_USER }}
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        TARGET_PACKAGE: '@azure/storage-blob'
-        TARGET_SOURCE_PATH: typings/lib
-    - uses: ad-m/github-push-action@master
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
     - name: DocFX - Build and publish documentation
       uses: ./actions/docprep
       env:

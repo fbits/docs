@@ -1,10 +1,14 @@
 #!/bin/sh -l
 
+# instala pacotes necessarios
 apt-get update
 apt-get install -y curl gnupg gnupg2 gnupg1 git
-curl -sL https://deb.nodesource.com/setup_11.x | bash -
+
+# instala nodejs
+curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
 apt-get install -y nodejs npm
 
+# instala typedoc e type2docfx que geram o arquivo .yml de estrutura da documentacao
 npm install typedoc --save-dev --global
 npm install type2docfx --save-dev --global
 mkdir _package
@@ -16,11 +20,11 @@ type2docfx _output.json docfx_project/api/
 
 echo "_package/node_modules/${TARGET_PACKAGE}/${TARGET_SOURCE_PATH}"
 
-# Do some cleanup.
+# remove arquivos que nao devem ir para o repositorio
 rm -rf _package
 rm -rf _output.json
 
-# Check in changes.
+# faz push das mudancas para a master
 git config --global user.email "$GH_EMAIL"
 git config --global user.name "$GH_USER"
 
