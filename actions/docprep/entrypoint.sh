@@ -1,8 +1,8 @@
 #!/bin/sh -l
 
-echo "Updating..."
-#apt-get update
-apt-get install -y gnupg gnupg2 gnupg1
+#echo "Updating..."
+apt-get update
+apt-get install -y curl gnupg gnupg2 gnupg1 git unzip wget
 ln -snf /usr/share/zoneinfo/$TZ /etc/localtime
 echo $TZ > /etc/timezone
 
@@ -11,7 +11,7 @@ echo "deb https://download.mono-project.com/repo/ubuntu stable-bionic main" | te
 apt update
 apt install mono-complete --yes
 
-# Get DocFX
+# Obtem DocFX
 wget https://github.com/dotnet/docfx/releases/download/v2.39.1/docfx.zip
 unzip docfx.zip -d _docfx
 cd docfx_project
@@ -21,6 +21,16 @@ mono ../_docfx/docfx.exe
 cd ..
 rm -rf _docfx
 rm -f docfx.zip
+
+# faz push das mudancas para a master
+git config --global user.email "$GH_EMAIL"
+git config --global user.name "$GH_USER"
+
+git add . --force
+git status
+git commit -m "Update auto-generated documentation."
+git push --set-upstream origin master
+
 
 #remote_repo="https://${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
 #remote_branch="master"

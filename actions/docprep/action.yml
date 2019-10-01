@@ -1,0 +1,10 @@
+name: 'Docfx build'
+description: ''
+inputs:
+  branch:
+    description: 'Destination branch to push changes'
+    required: false
+    default: 'master'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
