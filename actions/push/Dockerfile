@@ -1,14 +1,12 @@
-FROM ubuntu:18.04
+FROM alpine
 
-LABEL "com.github.actions.name"="DocFX - Push changes to Github"
-LABEL "com.github.actions.description"="Pushes build changes to Github"
-LABEL "com.github.actions.icon"="code"
-LABEL "com.github.actions.color"="red"
+LABEL "com.github.actions.name"="Git push for GitHub Actions"
+LABEL "com.github.actions.description"="Runs 'git push' to GitHub in an Action"
+LABEL "com.github.actions.icon"="upload-cloud"
+LABEL "com.github.actions.color"="green"
 
-LABEL "repository"="https://github.com/carolinesena/DocFX"
-LABEL "homepage"=""
-LABEL "maintainer"="Caroline Sena <caroline.sena@traycorp.com.br>"
+COPY README.md LICENSE start.sh /
 
-COPY entrypoint.sh /entrypoint.sh
-ENTRYPOINT ["/entrypoint.sh"]
-RUN ["chmod", "+x", "/entrypoint.sh"]
+RUN apk add --no-cache git
+
+CMD ["/actions/push/entrypoint.sh"]
