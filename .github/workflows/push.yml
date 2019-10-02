@@ -12,9 +12,7 @@ jobs:
         GH_EMAIL: ${{ secrets.GH_EMAIL }}
         GH_USER: ${{ secrets.GH_USER }}
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-    - name: Build the Docker image
-      uses: ./actions/push
-      run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
+    - uses: ad-m/github-push-action@master
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
 
