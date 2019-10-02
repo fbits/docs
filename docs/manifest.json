@@ -57,11 +57,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-<<<<<<< HEAD
-          "hash": "CP6Pk1qAtHkYR6XW+K421w=="
-=======
-          "hash": "7zOmPOR3dkfin/3idPkCTQ=="
->>>>>>> 083515750a9d433253415e710ed1e8230ce098e9
+          "hash": "Qczm2RUqnSNj69wlS7pfMw=="
         }
       },
       "is_incremental": false,
@@ -83,39 +79,33 @@
   "incremental_info": [
     {
       "status": {
-        "can_incremental": true,
+        "can_incremental": false,
+        "details": "Cannot build incrementally because last build info is missing.",
         "incrementalPhase": "build",
         "total_file_count": 0,
-        "skipped_file_count": 0
+        "skipped_file_count": 0,
+        "full_build_reason_code": "NoAvailableBuildCache"
       },
       "processors": {
-        "ConceptualDocumentProcessor": {
-          "can_incremental": true,
-          "incrementalPhase": "build"
-        },
         "TocDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-<<<<<<< HEAD
           "incrementalPhase": "build",
           "total_file_count": 0,
           "skipped_file_count": 0
         },
         "ConceptualDocumentProcessor": {
-          "can_incremental": true,
+          "can_incremental": false,
           "incrementalPhase": "build",
           "total_file_count": 4,
-          "skipped_file_count": 4
-=======
-          "incrementalPhase": "build"
->>>>>>> 083515750a9d433253415e710ed1e8230ce098e9
+          "skipped_file_count": 0
         }
       }
     },
     {
       "status": {
-        "can_incremental": true,
-        "details": "Can support incremental post processing.",
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: last post processor info is null.",
         "incrementalPhase": "postProcessing",
         "total_file_count": 0,
         "skipped_file_count": 0
