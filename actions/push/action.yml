@@ -1,0 +1,20 @@
+name: 'GitHub Push'
+description: 'Pushes to GitHub repository local changes'
+inputs:
+  github_token:
+    description: 'Token for the repo: {{ secrets.GITHUB_TOKEN }}'
+    required: true
+  branch:
+    description: 'Destination branch to push changes'
+    required: false
+    default: 'master'
+  force:
+    description: 'Determines if force push is used'
+    required: false
+  directory:
+    description: 'Directory to change to before pushing.'
+    required: false
+    default: '.'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
