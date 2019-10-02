@@ -13,6 +13,7 @@ jobs:
         GH_USER: ${{ secrets.GH_USER }}
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     - uses: ./actions/push
+      run: docker build ./actions/push --file ./actions/push/Dockerfile --tag my-image-name:$(date +%s)
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
 
