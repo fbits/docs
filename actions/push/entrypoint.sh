@@ -1,6 +1,8 @@
 #!/bin/sh
 set -e
 
+sudo apt-get install -y git
+
 INPUT_BRANCH=${INPUT_BRANCH:-master}
 INPUT_FORCE=${INPUT_FORCE:-false}
 INPUT_DIRECTORY=${INPUT_DIRECTORY:-'.'}
