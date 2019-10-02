@@ -11,6 +11,7 @@ jobs:
       env:
         GH_EMAIL: ${{ secrets.GH_EMAIL }}
         GH_USER: ${{ secrets.GH_USER }}
+      with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
     - uses: ad-m/github-push-action@master
       with:
