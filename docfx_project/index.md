@@ -1,6 +1,6 @@
-# Documentação de aplicações da TrayCorp.
+# Documentação TrayCorp.
 
-Aqui você pode encontrar a documentação sobre os principais produtos da TrayCorp voltados para desenvolvedores.
+Documentação sobre produtos da TrayCorp.
 
 A documentação se baseia em arquivos [Markdown](http://daringfireball.net/projects/markdown/)
 
