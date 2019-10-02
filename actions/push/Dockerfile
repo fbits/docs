@@ -11,4 +11,4 @@ LABEL "maintainer"="Caroline Sena <caroline.sena@traycorp.com.br>"
 
 COPY entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
-RUN ["chmod", "+x", "/entrypoint.sh"]
+RUN ["chmod", "+x", "./actions/push/entrypoint.sh"]
