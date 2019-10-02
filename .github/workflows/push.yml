@@ -12,7 +12,7 @@ jobs:
         GH_EMAIL: ${{ secrets.GH_EMAIL }}
         GH_USER: ${{ secrets.GH_USER }}
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-    - uses: ad-m/github-push-action@master
+    - uses: ./actions/push
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
 
