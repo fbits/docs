@@ -1,0 +1,17 @@
+on: push
+name: Documentation Generation Workflow
+jobs:
+  docFX-GenerateDocumentation:
+    name: DocFX - Generate TypeScript Documentation
+    runs-on: windows-2019
+    steps:
+    - uses: actions/checkout@master
+    - name: DocFX - Build and publish documentation
+      runs:
+        choco install docfx -y
+        cd docfx_project
+        docfx docfx.json
+      shell: pwsh
+    - uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
