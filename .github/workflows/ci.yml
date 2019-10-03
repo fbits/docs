@@ -7,7 +7,7 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: DocFX - Build and publish documentation
-      run:
+      run: |
         choco install docfx -y
         docfx docfx_projectdocfx.json
       shell: pwsh
