@@ -9,7 +9,7 @@ jobs:
     - name: DocFX - Build and publish documentation
       run: |
         choco install docfx -y
-        docfx docfx_projectdocfx.json
+        docfx docfx_project/docfx.json
       shell: pwsh
     - uses: ad-m/github-push-action@master
       with:
