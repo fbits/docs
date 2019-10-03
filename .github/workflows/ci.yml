@@ -11,9 +11,6 @@ jobs:
         choco install docfx -y
         docfx docfx_project/docfx.json
       shell: pwsh
-  docFX-PublishDocumentation:
-    runs-on: ubuntu-18.04
-    steps:
     - uses: ad-m/github-push-action@master
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
