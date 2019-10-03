@@ -3,21 +3,14 @@ name: Documentation Generation Workflow
 jobs:
   docFX-GenerateDocumentation:
     name: DocFX - Generate TypeScript Documentation
-    runs-on: ubuntu-18.04
+    runs-on: windows-2019
     steps:
     - uses: actions/checkout@master
     - name: DocFX - Build documentation
       run: |
-        apt-get install -y gnupg gnupg2 gnupg1
-        apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
-        echo "deb https://download.mono-project.com/repo/ubuntu stable-bionic main" | tee /etc/apt/sources.list.d/mono-official-stable.list
-        apt update
-        sudo apt install mono-complete --yes
-        wget https://github.com/dotnet/docfx/releases/download/v2.39.1/docfx.zip
-        sudo unzip docfx.zip -d _docfx
-        cd docfx_project
-        sudo mono ../_docfx/docfx.exe
-        cd ..
+        choco install docfx -y
+        docfx docfx_project/docfx.json
+        dir
       shell: pwsh
     - name: publish documentation
       env:
