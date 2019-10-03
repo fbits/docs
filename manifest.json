@@ -57,10 +57,10 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "MFe1ubo1gY7yCXkNG7c7IQ=="
+          "hash": "lRaM78w9GDnl+wifiSTkeg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
