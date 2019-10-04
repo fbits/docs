@@ -7,6 +7,10 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: DocFX - Build documentation
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_REPOSITORY: ${{ secrets.GITHUB_REPOSITORY }}
+        GITHUB_ACTOR: ${{ secrets.GITHUB_ACTOR }}
       run: |
         sudo wget https://github.com/dotnet/docfx/releases/download/v2.39.1/docfx.zip
         sudo unzip docfx.zip -d _docfx
@@ -16,6 +20,13 @@ jobs:
         cd ..
         sudo rm -rf _docfx
         sudo rm -f docfx.zip
+        remote_repo="https://${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+        remote_branch="master"
+        git init
+        git config --global user.name "${GITHUB_ACTOR}"
+        git config --global user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+        git add . --force
+        git commit -m "Deploy ${GITHUB_REPOSITORY} to ${GITHUB_REPOSITORY}:$remote_branch"
       shell: pwsh
     - uses: ad-m/github-push-action@master
       with:
