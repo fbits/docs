@@ -24,7 +24,7 @@ jobs:
         git add . --force
         git status
         git commit -m "Update auto-generated documentation."
-        git remote set-url --push origin https://carolinesena:$GITHUB_TOKEN@github.com/carolinesena/Docfx
+        git remote set-url --push origin https://carolinesena:${GITHUB_TOKEN}@github.com/carolinesena/Docfx
         git push origin master
     - uses: ad-m/github-push-action@master
       with:
