@@ -1,0 +1,54 @@
+on: push
+name: Documentation Generation Workflow
+jobs:
+  docFX-GenerateDocumentation:
+    name: DocFX - Generate TypeScript Documentation
+    runs-on: windows-2019
+    steps:
+    - uses: actions/checkout@master
+    - name: DocFX - Build documentation
+      run: |
+        choco install docfx -y
+        docfx docfx_project/docfx.json
+      shell: pwsh
+    - name: publish documentation
+      env:
+        GH_EMAIL: ${{ secrets.GH_EMAIL }}
+        GH_USER: ${{ secrets.GH_USER }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_ACTOR: ${{ secrets.GITHUB_ACTOR }}
+        GITHUB_SHA: ${{ secrets.GITHUB_SHA }}
+        GITHUB_REPOSITORY: ${{ secrets.GITHUB_REPOSITORY }}
+        PUBLISH_BRANCH: master
+      run: |
+        git config user.name "$GITHUB_ACTOR"
+        git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+        git remote rm origin || true
+        git remote add origin "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+        git add --all
+        git commit -m "Commit Docfx"
+        git push origin master
+    - uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+    - uses: actions/upload-artifact@master
+      with:
+        name: my-artifact
+        path: .
+  docFX-PublishDocumentation:
+    needs: [docFX-GenerateDocumentation]
+    runs-on: ubuntu-18.04
+    steps:
+    - uses: actions/download-artifact@master
+      with:
+        name: my-artifact
+        path: .
+    - name: publishing
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        git init
+        git remote set-url --push origin https://carolinesena:$GITHUB_TOKEN@github.com/carolinesena/Docfx
+    - uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}

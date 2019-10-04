@@ -1,0 +1,29 @@
+on: push
+name: Documentation Generation Workflow
+jobs:
+  docFX-GenerateDocumentation:
+    name: DocFX - Generate TypeScript Documentation
+    runs-on: ubuntu-18.04
+    steps:
+    - uses: actions/checkout@master
+    - name: DocFX - Build documentation
+      run: |
+        sudo wget https://github.com/dotnet/docfx/releases/download/v2.39.1/docfx.zip
+        sudo unzip docfx.zip -d _docfx
+        cd docfx_project
+        sudo mono ../_docfx/docfx.exe
+        cd ..
+      shell: pwsh
+    - name: publish documentation
+      env:
+        GH_EMAIL: ${{ secrets.GH_EMAIL }}
+        GH_USER: ${{ secrets.GH_USER }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        git init
+        git config --global user.email caroline.sena@traycorp.com.br
+        git config --global user.name carolinesena
+        git add . --force
+        git status
+        git commit -m "Update auto-generated documentation."
+        git push --set-upstream https://github.com/carolinesena/Docfx.git master
