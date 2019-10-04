@@ -1,4 +1,4 @@
-﻿
+
 <div id="sidetoggle">
   <div>
     <div class="sidefilter">
@@ -12,7 +12,7 @@
           
           <ul class="nav level1">
                 <li>
-                    <a href="artigos/intro.html" name="artigos/toc.html" title="Artigos">Artigos</a>
+                    <a href="proxy.html" name="" title="Integra&#231;&#227;o com o Proxy">Integra&#231;&#227;o com o Proxy</a>
                 </li>
           </ul>
       </div>
