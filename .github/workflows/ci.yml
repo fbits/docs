@@ -17,13 +17,15 @@ jobs:
         GH_USER: ${{ secrets.GH_USER }}
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
+        ls
         git init
         git config --global user.email "$GH_EMAIL"
         git config --global user.name "$GH_USER"
         git add . --force
         git status
         git commit -m "Update auto-generated documentation."
-        git push --set-upstream origin master
+        git remote set-url --push origin https://carolinesena:$GITHUB_TOKEN@github.com/carolinesena/Docfx
+        git push
     - uses: ad-m/github-push-action@master
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
