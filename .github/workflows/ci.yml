@@ -16,16 +16,20 @@ jobs:
         GH_EMAIL: ${{ secrets.GH_EMAIL }}
         GH_USER: ${{ secrets.GH_USER }}
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_ACTOR: ${{ secrets.GITHUB_ACTOR }}
+        GITHUB_SHA: ${{ secrets.GITHUB_SHA }}
+        GITHUB_REPOSITORY: ${{ secrets.GITHUB_REPOSITORY }}
+        PUBLISH_BRANCH: master
       run: |
-        echo $GH_EMAIL
-        echo ${env:GH_EMAIL}
-        git config --global user.email caroline.sena@traycorp.com.br
-        git config --global user.name carolinesena
-        git add . --force
-        git status
-        git commit -m "Update auto-generated documentation."
-        git remote set-url --push origin https://carolinesena:${env:GITHUB_TOKEN}@github.com/carolinesena/Docfx
-        git push origin master
+        remote_repo="https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+        remote_branch="${PUBLISH_BRANCH}"
+        git config user.name "${GITHUB_ACTOR}"
+        git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+        git remote rm origin || true
+        git remote add origin "${remote_repo}"
+        git add --all
+        git commit -m "Commit Docfx"
+        git push origin "${remote_branch}"
     - uses: ad-m/github-push-action@master
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
