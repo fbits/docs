@@ -17,6 +17,8 @@ jobs:
         sudo unzip docfx.zip -d _docfx
         cd docfx_project
         sudo mono ../_docfx/docfx.exe
+        dnu restore
+        dnu build
         cd ..
       shell: pwsh
     - name: publish documentation
