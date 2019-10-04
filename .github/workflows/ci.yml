@@ -17,8 +17,10 @@ jobs:
         sudo unzip docfx.zip -d _docfx
         cd docfx_project
         sudo mono ../_docfx/docfx.exe
+        sudo dnu restore
+        sudo dnu build
         cd ..
-      shell: bash
+      shell: pwsh
     - name: publish documentation
       env:
         GH_EMAIL: ${{ secrets.GH_EMAIL }}
