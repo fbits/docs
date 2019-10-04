@@ -11,20 +11,18 @@ jobs:
         choco install docfx -y
         docfx docfx_project/docfx.json
       shell: pwsh
-    - name: publish documentation
-      env:
-        GH_EMAIL: ${{ secrets.GH_EMAIL }}
-        GH_USER: ${{ secrets.GH_USER }}
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      run: |
-        ls
-        git config --global user.email caroline.sena@traycorp.com.br
-        git config --global user.name carolinesena
-        git add . --force
-        git status
-        git commit -m "Update auto-generated documentation."
-        git remote set-url --push origin https://carolinesena:${GITHUB_TOKEN}@github.com/carolinesena/Docfx
-        git push origin master
+    - uses: actions/upload-artifact@master
+      with:
+        name: my-artifact
+        path: .
+  docFX-PublishDocumentation:
+    runs-on: ubuntu-18.04
+    steps:
+    - uses: actions/download-artifact@master
+      with:
+        name: my-artifact
+        path: .
+    - run: ls
     - uses: ad-m/github-push-action@master
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
