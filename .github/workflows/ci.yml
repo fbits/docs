@@ -20,13 +20,11 @@ jobs:
         cd ..
         sudo rm -rf _docfx
         sudo rm -f docfx.zip
-        remote_repo="https://${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
-        remote_branch="master"
         git init
         git config --global user.name "${GITHUB_ACTOR}"
         git config --global user.email "${GITHUB_ACTOR}@users.noreply.github.com"
         git add . --force
-        git commit -m "Deploy ${GITHUB_REPOSITORY} to ${GITHUB_REPOSITORY}:$remote_branch"
+        git commit -m "Deploy ${GITHUB_REPOSITORY} to ${GITHUB_REPOSITORY}:master"
       shell: pwsh
     - uses: ad-m/github-push-action@master
       with:
