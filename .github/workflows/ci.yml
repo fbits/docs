@@ -18,7 +18,7 @@ jobs:
         cd docfx_project
         sudo mono ../_docfx/docfx.exe
         cd ..
-      shell: sh
+      shell: bash
     - name: publish documentation
       env:
         GH_EMAIL: ${{ secrets.GH_EMAIL }}
