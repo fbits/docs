@@ -21,8 +21,8 @@ jobs:
         sudo rm -rf _docfx
         sudo rm -f docfx.zip
         git init
-        git config --global user.name "${GITHUB_ACTOR}"
-        git config --global user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+        git config --global user.name carolinesena
+        git config --global user.email caroline.sena@traycorp.com.br
         git add . --force
         git commit -m "Deploy ${GITHUB_REPOSITORY} to ${GITHUB_REPOSITORY}:master"
       shell: pwsh
