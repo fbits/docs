@@ -17,7 +17,8 @@ jobs:
         GH_USER: ${{ secrets.GH_USER }}
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
-        echo $ GH_EMAIL
+        echo $GH_EMAIL
+        echo ${env:GH_EMAIL}
         git config --global user.email caroline.sena@traycorp.com.br
         git config --global user.name carolinesena
         git add . --force
