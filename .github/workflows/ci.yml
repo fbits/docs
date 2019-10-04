@@ -23,7 +23,12 @@ jobs:
       with:
         name: my-artifact
         path: .
-    - run: pwd 
+    - name: publishing
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        git init
+        git remote set-url --push origin https://carolinesena:$GITHUB_TOKEN@github.com/carolinesena/Docfx
     - uses: ad-m/github-push-action@master
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
