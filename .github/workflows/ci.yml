@@ -13,7 +13,9 @@ jobs:
         cd docfx_project
         rm -rf obj/.cache/build/
         mono ../_docfx/docfx.exe
-        cd ../..
+        cd ..
+        rm -rf _docfx
+        rm -f docfx.zip
       shell: pwsh
     - uses: ad-m/github-push-action@master
       with:
