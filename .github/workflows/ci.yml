@@ -12,6 +12,12 @@ jobs:
         sudo unzip docfx.zip -d _docfx
         cd docfx_project
         sudo mono ../_docfx/docfx.exe
+        cd ../_docfx
+        dotnet restore
+        dotnet build
+        cd ../..
+        cd docfx_project
+        sudo mono ../_docfx/docfx.exe
         cd ..
       shell: pwsh
     - name: publish documentation
