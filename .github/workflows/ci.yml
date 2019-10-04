@@ -17,9 +17,8 @@ jobs:
         sudo unzip docfx.zip -d _docfx
         cd docfx_project
         sudo mono ../_docfx/docfx.exe
-        dnvm upgrade
-        dnu restore
-        dnu build
+        dotnet restore
+        dotnet build
         cd ..
       shell: pwsh
     - name: publish documentation
