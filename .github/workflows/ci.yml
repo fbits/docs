@@ -11,10 +11,6 @@ jobs:
         choco install docfx -y
         docfx docfx_project/docfx.json
       shell: pwsh
-    - uses: actions/upload-artifact@master
-      with:
-        name: my-artifact
-        path: .
     - name: publish documentation
       env:
         GH_EMAIL: ${{ secrets.GH_EMAIL }}
@@ -32,6 +28,10 @@ jobs:
     - uses: ad-m/github-push-action@master
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
+    - uses: actions/upload-artifact@master
+      with:
+        name: my-artifact
+        path: .
   docFX-PublishDocumentation:
     needs: [docFX-GenerateDocumentation]
     runs-on: ubuntu-18.04
