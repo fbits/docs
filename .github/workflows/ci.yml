@@ -13,7 +13,7 @@ jobs:
         cd docfx_project
         rm -rf obj/.cache/build/
         mono ../_docfx/docfx.exe
-        cd ..
+        cd ../..
       shell: pwsh
     - uses: ad-m/github-push-action@master
       with:
