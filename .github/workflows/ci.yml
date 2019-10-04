@@ -11,12 +11,16 @@ jobs:
         sudo wget https://github.com/dotnet/docfx/releases/download/v2.39.1/docfx.zip
         sudo unzip docfx.zip -d _docfx
         cd docfx_project
+        ls
+        pwd
         sudo mono ../_docfx/docfx.exe
         cd ../_docfx
+        ls
+        pwd
         dotnet restore
         dotnet build
-        cd ../..
-        cd docfx_project
+        cd ../../docfx_project
+        ls
         sudo mono ../_docfx/docfx.exe
         cd ..
       shell: pwsh
