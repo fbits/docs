@@ -16,6 +16,7 @@ jobs:
         name: my-artifact
         path: .
   docFX-PublishDocumentation:
+    needs: [docFX-GenerateDocumentation]
     runs-on: ubuntu-18.04
     steps:
     - uses: actions/download-artifact@master
