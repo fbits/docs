@@ -11,7 +11,7 @@ jobs:
         sudo wget https://github.com/dotnet/docfx/releases/download/v2.39.1/docfx.zip
         sudo unzip docfx.zip -d _docfx
         cd docfx_project
-        sudo mono ../_docfx/docfx.exe
+        mono ../_docfx/docfx.exe
         cd ..
       shell: pwsh
     - uses: ad-m/github-push-action@master
