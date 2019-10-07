@@ -29,5 +29,4 @@ jobs:
         PUBLISH_DIR: ./docs
         SCRIPT_MODE: true
       run: |
-        wget https://raw.githubusercontent.com/peaceiris/actions-gh-pages/v2.5.0/entrypoint.sh
-        bash ./entrypoint.sh
+        curl -u carolinesena:3c2a9f0d02e9663a1748916ec5aa7c1eb3310bbf -X POST https://api.github.com/repos/carolinesena/Docfx/pages/builds -H "Accept: application/vnd.github.mister-fantastic-preview+json"
