@@ -98,8 +98,8 @@
             *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
             
             var disqus_config = function () {
-            this.page.url = 'https://github.com/carolinesena/Docfx/blob/881e4bf22abd38f636a1f99510d08eca892e8bf9/docfx_project/artigos/intro.md/#L1';  // Replace PAGE_URL with your page's canonical URL variable
-            this.page.identifier = 'https://github.com/carolinesena/Docfx/blob/881e4bf22abd38f636a1f99510d08eca892e8bf9/docfx_project/artigos/intro.md/#L1'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+            this.page.url = 'https://github.com/carolinesena/Docfx/blob/e9697845b11c489e40119def574382087c6068f9/docfx_project/artigos/intro.md/#L1';  // Replace PAGE_URL with your page's canonical URL variable
+            this.page.identifier = 'https://github.com/carolinesena/Docfx/blob/e9697845b11c489e40119def574382087c6068f9/docfx_project/artigos/intro.md/#L1'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
             };
             
             (function() { // DON'T EDIT BELOW THIS LINE
@@ -129,7 +129,7 @@
               </div>
               </div>      <ul class="nav">
                   <li>
-                    <a href="https://github.com/carolinesena/Docfx/blob/881e4bf22abd38f636a1f99510d08eca892e8bf9/docfx_project/artigos/intro.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/carolinesena/Docfx/blob/e9697845b11c489e40119def574382087c6068f9/docfx_project/artigos/intro.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
