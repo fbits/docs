@@ -3,7 +3,7 @@ A Tray Corp permite a integração de um site fora de nossos servidores com a lo
 ​
 ## Exemplo
 Suponha um blog no endereço blog.minhaloja.com.br hospedado externamente e a loja virtual no endereço minhaloja.com.br.  O proxy irá permitir que você determine um caminho a qual o blog será retornado através do endereço da loja, como por exemplo minhaloja.com.br/blog.
-​
+
 Algumas lojas que utilizam o proxy:
 - [Loja Virus](https://www.lojavirus.com.br/) - [Blog](https://www.lojavirus.com.br/blog)
 - [Líder da Matilha](https://www.liderdamatilha.com.br/) - [Blog](https://www.liderdamatilha.com.br/dicas)
