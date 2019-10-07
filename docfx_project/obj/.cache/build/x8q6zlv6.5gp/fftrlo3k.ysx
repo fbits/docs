@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <!--[if IE]><![endif]-->
 <html>
 	
@@ -84,7 +84,7 @@
 </div>
                 <body>
 
-	<h1 id="introdução">Introdução</h1>
+	<h1 id="introdução" sourcefile="artigos/intro.md" sourcestartlinenumber="1">Introdução</h1>
 	
 
 
@@ -98,8 +98,8 @@
             *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
             
             var disqus_config = function () {
-            this.page.url = 'https://github.com/carolinesena/Docfx/blob/e8790dd43e59422717594df7d23016cccac2dc21/docfx_project/artigos/intro.md/#L1';  // Replace PAGE_URL with your page's canonical URL variable
-            this.page.identifier = 'https://github.com/carolinesena/Docfx/blob/e8790dd43e59422717594df7d23016cccac2dc21/docfx_project/artigos/intro.md/#L1'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+            this.page.url = 'https://github.com/carolinesena/Docfx/blob/d27309b0002f0ee6c1b106f55e093c78e0713387/docfx_project/artigos/intro.md/#L1';  // Replace PAGE_URL with your page's canonical URL variable
+            this.page.identifier = 'https://github.com/carolinesena/Docfx/blob/d27309b0002f0ee6c1b106f55e093c78e0713387/docfx_project/artigos/intro.md/#L1'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
             };
             
             (function() { // DON'T EDIT BELOW THIS LINE
@@ -129,7 +129,7 @@
               </div>
               </div>      <ul class="nav">
                   <li>
-                    <a href="https://github.com/carolinesena/Docfx/blob/e8790dd43e59422717594df7d23016cccac2dc21/docfx_project/artigos/intro.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/carolinesena/Docfx/blob/d27309b0002f0ee6c1b106f55e093c78e0713387/docfx_project/artigos/intro.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
