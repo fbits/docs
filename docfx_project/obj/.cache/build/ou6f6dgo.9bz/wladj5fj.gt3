@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <!--[if IE]><![endif]-->
 <html>
 	
@@ -84,26 +84,25 @@
 </div>
                 <body>
 
-	<h1 id="integração-com-proxy">Integração com Proxy</h1>
+	<h1 id="integração-com-proxy" sourcefile="artigos/proxy.md" sourcestartlinenumber="1">Integração com Proxy</h1>
 	
-<p>A Tray Corp permite a integração de um site fora de nossos servidores com a loja virtual através de um proxy. Esse proxy irá agir como intermediário das requisições da loja virtual, podendo buscar conteúdo de nossos servidores ou de um servidor externo dependendo do caminho da requisição.
+<p sourcefile="artigos/proxy.md" sourcestartlinenumber="2">A Tray Corp permite a integração de um site fora de nossos servidores com a loja virtual através de um proxy. Esse proxy irá agir como intermediário das requisições da loja virtual, podendo buscar conteúdo de nossos servidores ou de um servidor externo dependendo do caminho da requisição.
 ​</p>
-<h2 id="exemplo">Exemplo</h2>
-<p>Suponha um blog no endereço blog.minhaloja.com.br hospedado externamente e a loja virtual no endereço minhaloja.com.br.  O proxy irá permitir que você determine um caminho a qual o blog será retornado através do endereço da loja, como por exemplo minhaloja.com.br/blog.
-​
-Algumas lojas que utilizam o proxy:</p>
-<ul>
-<li><a href="https://www.lojavirus.com.br/">Loja Virus</a> - <a href="https://www.lojavirus.com.br/blog">Blog</a></li>
-<li><a href="https://www.liderdamatilha.com.br/">Líder da Matilha</a> - <a href="https://www.liderdamatilha.com.br/dicas">Blog</a></li>
-<li><a href="https://www.bsautocenter.com.br/">BS Autocenter</a> - <a href="https://www.bsautocenter.com.br/blog">Blog</a></li>
+<h2 id="exemplo" sourcefile="artigos/proxy.md" sourcestartlinenumber="4">Exemplo</h2>
+<p sourcefile="artigos/proxy.md" sourcestartlinenumber="5">Suponha um blog no endereço blog.minhaloja.com.br hospedado externamente e a loja virtual no endereço minhaloja.com.br.  O proxy irá permitir que você determine um caminho a qual o blog será retornado através do endereço da loja, como por exemplo minhaloja.com.br/blog.</p>
+<p sourcefile="artigos/proxy.md" sourcestartlinenumber="7">Algumas lojas que utilizam o proxy:</p>
+<ul sourcefile="artigos/proxy.md" sourcestartlinenumber="8">
+<li sourcefile="artigos/proxy.md" sourcestartlinenumber="8"><a href="https://www.lojavirus.com.br/" sourcefile="artigos/proxy.md" sourcestartlinenumber="8">Loja Virus</a> - <a href="https://www.lojavirus.com.br/blog" sourcefile="artigos/proxy.md" sourcestartlinenumber="8">Blog</a></li>
+<li sourcefile="artigos/proxy.md" sourcestartlinenumber="9"><a href="https://www.liderdamatilha.com.br/" sourcefile="artigos/proxy.md" sourcestartlinenumber="9">Líder da Matilha</a> - <a href="https://www.liderdamatilha.com.br/dicas" sourcefile="artigos/proxy.md" sourcestartlinenumber="9">Blog</a></li>
+<li sourcefile="artigos/proxy.md" sourcestartlinenumber="10"><a href="https://www.bsautocenter.com.br/" sourcefile="artigos/proxy.md" sourcestartlinenumber="10">BS Autocenter</a> - <a href="https://www.bsautocenter.com.br/blog" sourcefile="artigos/proxy.md" sourcestartlinenumber="10">Blog</a></li>
 </ul>
-<h2 id="requisitos">Requisitos</h2>
-<p>Para que a integração possa ocorrer, é necessário informar alguns dados:</p>
-<ul>
-<li>Endereço do site a ser integrado</li>
-<li>Caminho da loja física a ser utilizado</li>
-<li>Serviço de hospedagem utilizado (Ex: Wordpress)</li>
-<li>Contato da pessoa responsável pelo design do site</li>
+<h2 id="requisitos" sourcefile="artigos/proxy.md" sourcestartlinenumber="11">Requisitos</h2>
+<p sourcefile="artigos/proxy.md" sourcestartlinenumber="12">Para que a integração possa ocorrer, é necessário informar alguns dados:</p>
+<ul sourcefile="artigos/proxy.md" sourcestartlinenumber="13">
+<li sourcefile="artigos/proxy.md" sourcestartlinenumber="13">Endereço do site a ser integrado</li>
+<li sourcefile="artigos/proxy.md" sourcestartlinenumber="14">Caminho da loja física a ser utilizado</li>
+<li sourcefile="artigos/proxy.md" sourcestartlinenumber="15">Serviço de hospedagem utilizado (Ex: Wordpress)</li>
+<li sourcefile="artigos/proxy.md" sourcestartlinenumber="16">Contato da pessoa responsável pelo design do site</li>
 </ul>
 
 
@@ -118,7 +117,7 @@ Algumas lojas que utilizam o proxy:</p>
             
             var disqus_config = function () {
             this.page.url = location.href;  // Replace PAGE_URL with your page's canonical URL variable
-            this.page.identifier = 'https://github.com/carolinesena/Docfx/blob/83e04951497f5a4b37edb15a1eaf2e6b4654390b/docfx_project/artigos/proxy.md/#L1'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+            this.page.identifier = 'https://github.com/carolinesena/Docfx/blob/5641ac35fc51a6fb827a1e0b2b2d416fd8c113f5/docfx_project/artigos/proxy.md/#L1'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
             };
             
             (function() { // DON'T EDIT BELOW THIS LINE
@@ -148,7 +147,7 @@ Algumas lojas que utilizam o proxy:</p>
               </div>
               </div>      <ul class="nav">
                   <li>
-                    <a href="https://github.com/carolinesena/Docfx/blob/83e04951497f5a4b37edb15a1eaf2e6b4654390b/docfx_project/artigos/proxy.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/carolinesena/Docfx/blob/5641ac35fc51a6fb827a1e0b2b2d416fd8c113f5/docfx_project/artigos/proxy.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
