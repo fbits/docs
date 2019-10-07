@@ -20,12 +20,17 @@ jobs:
         cd ..
         sudo rm -rf _docfx
         sudo rm -f docfx.zip
-        git init
-        git config --global user.name carolinesena
-        git config --global user.email caroline.sena@traycorp.com.br
-        git add . --force
-        git commit -m "Deploy ${GITHUB_REPOSITORY} to ${GITHUB_REPOSITORY}:master"
       shell: pwsh
+    - name: DocFX - Commit
+      uses: ./actions/push
+      env:
+        GH_EMAIL: ${{ secrets.GH_EMAIL }}
+        GH_USER: ${{ secrets.GH_USER }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_REPOSITORY: ${{ secrets.GITHUB_REPOSITORY }}
+        GITHUB_ACTOR: ${{ secrets.GITHUB_ACTOR }}
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
     - uses: ad-m/github-push-action@master
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
