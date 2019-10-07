@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <!--[if IE]><![endif]-->
 <html>
 	
@@ -77,9 +77,9 @@
 </div>
                 <body>
 
-	<h1 id="documentação-traycorp">Documentação TrayCorp.</h1>
+	<h1 id="documentação-traycorp" sourcefile="index.md" sourcestartlinenumber="1">Documentação TrayCorp.</h1>
 	
-<p>Documentação sobre produtos da TrayCorp.</p>
+<p sourcefile="index.md" sourcestartlinenumber="3">Documentação sobre produtos da TrayCorp.</p>
 
 
 </body></article>
@@ -92,8 +92,8 @@
             *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
             
             var disqus_config = function () {
-            this.page.url = 'location.href';  // Replace PAGE_URL with your page's canonical URL variable
-            this.page.identifier = 'https://github.com/carolinesena/Docfx/blob/eb51897150c6a35587e5dfcfb4db265215a2917e/docfx_project/index.md/#L1'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+            this.page.url = location.href;  // Replace PAGE_URL with your page's canonical URL variable
+            this.page.identifier = 'https://github.com/carolinesena/Docfx/blob/4baa5da8d7db09fdd42f3f319ea10b2596d2c430/docfx_project/index.md/#L1'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
             };
             
             (function() { // DON'T EDIT BELOW THIS LINE
@@ -123,7 +123,7 @@
               </div>
               </div>      <ul class="nav">
                   <li>
-                    <a href="https://github.com/carolinesena/Docfx/blob/eb51897150c6a35587e5dfcfb4db265215a2917e/docfx_project/index.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/carolinesena/Docfx/blob/4baa5da8d7db09fdd42f3f319ea10b2596d2c430/docfx_project/index.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
