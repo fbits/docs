@@ -33,7 +33,6 @@ jobs:
     - name: DocFX - Push
       env:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        force: true
       run:
         bash ./actions/push.sh
     - name: Deploy
