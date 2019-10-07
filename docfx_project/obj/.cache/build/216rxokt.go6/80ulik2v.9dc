@@ -117,8 +117,8 @@ Algumas lojas que utilizam o proxy:</p>
             *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
             
             var disqus_config = function () {
-            this.page.url = 'https://github.com/carolinesena/Docfx/blob/a5e0a8858b9b24678b8ce806d155e47522765559/docfx_project/artigos/proxy.md/#L1';  // Replace PAGE_URL with your page's canonical URL variable
-            this.page.identifier = 'https://github.com/carolinesena/Docfx/blob/a5e0a8858b9b24678b8ce806d155e47522765559/docfx_project/artigos/proxy.md/#L1'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+            this.page.url = 'https://github.com/carolinesena/Docfx/blob/9dccd7ba1f28bdf1dff830017f31809cf1b5f934/docfx_project/artigos/proxy.md/#L1';  // Replace PAGE_URL with your page's canonical URL variable
+            this.page.identifier = 'https://github.com/carolinesena/Docfx/blob/9dccd7ba1f28bdf1dff830017f31809cf1b5f934/docfx_project/artigos/proxy.md/#L1'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
             };
             
             (function() { // DON'T EDIT BELOW THIS LINE
@@ -148,7 +148,7 @@ Algumas lojas que utilizam o proxy:</p>
               </div>
               </div>      <ul class="nav">
                   <li>
-                    <a href="https://github.com/carolinesena/Docfx/blob/a5e0a8858b9b24678b8ce806d155e47522765559/docfx_project/artigos/proxy.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/carolinesena/Docfx/blob/9dccd7ba1f28bdf1dff830017f31809cf1b5f934/docfx_project/artigos/proxy.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
