@@ -9,7 +9,7 @@
       "output": {
         ".html": {
           "relative_path": "api/index.html",
-          "hash": "+Idt13sQKAgqR+oCsFVoNg=="
+          "hash": "MEmrQRjnUhP4nZTWHVi1Hg=="
         }
       },
       "is_incremental": false,
@@ -21,7 +21,7 @@
       "output": {
         ".html": {
           "relative_path": "artigos/intro.html",
-          "hash": "P04G5IE55TjqgbtyRofaGA=="
+          "hash": "LTDpe37UAd2wz3u2tJxB2w=="
         }
       },
       "is_incremental": false,
@@ -33,7 +33,7 @@
       "output": {
         ".html": {
           "relative_path": "artigos/proxy.html",
-          "hash": "f/p3kMsbVJdP//xbBtNeVg=="
+          "hash": "jJHwxhBOQTacVKdn85J1tw=="
         }
       },
       "is_incremental": false,
@@ -57,7 +57,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "b0fZ6339tT4YilghOyU5sA=="
+          "hash": "ZfRbotY7lfX302obIpKAMw=="
         }
       },
       "is_incremental": false,
@@ -84,13 +84,13 @@
         "incrementalPhase": "build"
       },
       "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build"
+        },
         "TocDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
-        "ConceptualDocumentProcessor": {
-          "can_incremental": false,
           "incrementalPhase": "build"
         }
       }
