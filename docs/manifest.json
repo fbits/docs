@@ -1,6 +1,6 @@
 {
   "homepages": [],
-  "source_base_path": "/github/workspace/docfx_project",
+  "source_base_path": "/home/runner/work/Docfx/Docfx/docfx_project",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -9,7 +9,7 @@
       "output": {
         ".html": {
           "relative_path": "api/index.html",
-          "hash": "chMVT2GNoS+llUW8MtA2Wg=="
+          "hash": "cIETNSjlyVdzNdzRaXEXhA=="
         }
       },
       "is_incremental": false,
@@ -21,7 +21,7 @@
       "output": {
         ".html": {
           "relative_path": "artigos/intro.html",
-          "hash": "PYxO5f1/xXlnArax9ip/hw=="
+          "hash": "G0b6qFnhWFh5FP/E5Q4CNw=="
         }
       },
       "is_incremental": false,
@@ -33,7 +33,7 @@
       "output": {
         ".html": {
           "relative_path": "artigos/proxy.html",
-          "hash": "ZpUZPRzV56JTbVNEv/QSiQ=="
+          "hash": "0e7QUV5VUa8B2+RdEVxUGA=="
         }
       },
       "is_incremental": false,
@@ -57,7 +57,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "3A1RtBv5yygw3tJ6o6qdfQ=="
+          "hash": "t8h9SmjoLXckNzt8zF1x+g=="
         }
       },
       "is_incremental": false,
