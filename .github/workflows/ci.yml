@@ -29,4 +29,5 @@ jobs:
         PUBLISH_DIR: ./docs
         SCRIPT_MODE: true
       run: |
-        curl -X POST https://api.github.com/repos/carolinesena/carolinesena.github.io/pages/builds
+        wget https://raw.githubusercontent.com/peaceiris/actions-gh-pages/v2.5.0/entrypoint.sh
+        bash ./entrypoint.sh
