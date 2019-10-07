@@ -1,3 +1,3 @@
 # Documentação TrayCorp.
 
-Documentação sobre produtos da TrayCorp. testando build pages com branch
+Documentação sobre produtos da TrayCorp.
