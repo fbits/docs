@@ -22,15 +22,14 @@ jobs:
         sudo rm -f docfx.zip
       shell: pwsh
     - name: DocFX - Commit
-      uses: ./actions/push
       env:
         GH_EMAIL: ${{ secrets.GH_EMAIL }}
         GH_USER: ${{ secrets.GH_USER }}
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         GITHUB_REPOSITORY: ${{ secrets.GITHUB_REPOSITORY }}
         GITHUB_ACTOR: ${{ secrets.GITHUB_ACTOR }}
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        bash ./actions/push/entrypoint.sh
     - uses: ad-m/github-push-action@master
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
