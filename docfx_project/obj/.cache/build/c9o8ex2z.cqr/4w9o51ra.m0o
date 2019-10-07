@@ -5,9 +5,9 @@
 	<head>
 	  <meta charset="utf-8">
 	  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	  <title>Introdu&#231;&#227;o </title>
+	  <title>Integra&#231;&#227;o com Proxy </title>
 	  <meta name="viewport" content="width=device-width">
-	  <meta name="title" content="Introdu&#231;&#227;o ">
+	  <meta name="title" content="Integra&#231;&#227;o com Proxy ">
 	  <meta name="generator" content="docfx 2.39.1.0">
 	  
 	  <link rel="shortcut icon" href="../favicon.ico">
@@ -84,8 +84,27 @@
 </div>
                 <body>
 
-	<h1 id="introdução" sourcefile="artigos/intro.md" sourcestartlinenumber="1">Introdução</h1>
+	<h1 id="integração-com-proxy" sourcefile="artigos/proxy.md" sourcestartlinenumber="1">Integração com Proxy</h1>
 	
+<p sourcefile="artigos/proxy.md" sourcestartlinenumber="2">A Tray Corp permite a integração de um site fora de nossos servidores com a loja virtual através de um proxy. Esse proxy irá agir como intermediário das requisições da loja virtual, podendo buscar conteúdo de nossos servidores ou de um servidor externo dependendo do caminho da requisição.
+​</p>
+<h2 id="exemplo" sourcefile="artigos/proxy.md" sourcestartlinenumber="4">Exemplo</h2>
+<p sourcefile="artigos/proxy.md" sourcestartlinenumber="5">Suponha um blog no endereço blog.minhaloja.com.br hospedado externamente e a loja virtual no endereço minhaloja.com.br.  O proxy irá permitir que você determine um caminho a qual o blog será retornado através do endereço da loja, como por exemplo minhaloja.com.br/blog.
+​
+Algumas lojas que utilizam o proxy:</p>
+<ul sourcefile="artigos/proxy.md" sourcestartlinenumber="8">
+<li sourcefile="artigos/proxy.md" sourcestartlinenumber="8"><a href="https://www.lojavirus.com.br/" sourcefile="artigos/proxy.md" sourcestartlinenumber="8">Loja Virus</a> - <a href="https://www.lojavirus.com.br/blog" sourcefile="artigos/proxy.md" sourcestartlinenumber="8">Blog</a></li>
+<li sourcefile="artigos/proxy.md" sourcestartlinenumber="9"><a href="https://www.liderdamatilha.com.br/" sourcefile="artigos/proxy.md" sourcestartlinenumber="9">Líder da Matilha</a> - <a href="https://www.liderdamatilha.com.br/dicas" sourcefile="artigos/proxy.md" sourcestartlinenumber="9">Blog</a></li>
+<li sourcefile="artigos/proxy.md" sourcestartlinenumber="10"><a href="https://www.bsautocenter.com.br/" sourcefile="artigos/proxy.md" sourcestartlinenumber="10">BS Autocenter</a> - <a href="https://www.bsautocenter.com.br/blog" sourcefile="artigos/proxy.md" sourcestartlinenumber="10">Blog</a></li>
+</ul>
+<h2 id="requisitos" sourcefile="artigos/proxy.md" sourcestartlinenumber="11">Requisitos</h2>
+<p sourcefile="artigos/proxy.md" sourcestartlinenumber="12">Para que a integração possa ocorrer, é necessário informar alguns dados:</p>
+<ul sourcefile="artigos/proxy.md" sourcestartlinenumber="13">
+<li sourcefile="artigos/proxy.md" sourcestartlinenumber="13">Endereço do site a ser integrado</li>
+<li sourcefile="artigos/proxy.md" sourcestartlinenumber="14">Caminho da loja física a ser utilizado</li>
+<li sourcefile="artigos/proxy.md" sourcestartlinenumber="15">Serviço de hospedagem utilizado (Ex: Wordpress)</li>
+<li sourcefile="artigos/proxy.md" sourcestartlinenumber="16">Contato da pessoa responsável pelo design do site</li>
+</ul>
 
 
 </body></article>
@@ -99,7 +118,7 @@
             
             var disqus_config = function () {
             this.page.url = location.href;  // Replace PAGE_URL with your page's canonical URL variable
-            this.page.identifier = 'https://github.com/carolinesena/Docfx/blob/2c9e36b37008b62dbb0b520fa0d95be0dddc9544/docfx_project/artigos/intro.md/#L1'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+            this.page.identifier = 'https://github.com/carolinesena/Docfx/blob/83e04951497f5a4b37edb15a1eaf2e6b4654390b/docfx_project/artigos/proxy.md/#L1'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
             };
             
             (function() { // DON'T EDIT BELOW THIS LINE
@@ -129,7 +148,7 @@
               </div>
               </div>      <ul class="nav">
                   <li>
-                    <a href="https://github.com/carolinesena/Docfx/blob/2c9e36b37008b62dbb0b520fa0d95be0dddc9544/docfx_project/artigos/intro.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/carolinesena/Docfx/blob/83e04951497f5a4b37edb15a1eaf2e6b4654390b/docfx_project/artigos/proxy.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
