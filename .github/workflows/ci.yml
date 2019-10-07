@@ -32,7 +32,7 @@ jobs:
         bash ./actions/push/entrypoint.sh
     - name: DocFX - Push
       env:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run:
         bash ./actions/push.sh
     - name: Deploy
