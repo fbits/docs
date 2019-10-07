@@ -29,4 +29,4 @@ jobs:
         PUBLISH_DIR: ./docs
         SCRIPT_MODE: true
       run: |
-        curl -X POST https://api.github.com/repos/carolinesena/carolinesena.github.io/Docfx/pages/builds
+        curl -X POST https://api.github.com/repos/carolinesena/carolinesena.github.io/pages/builds
