@@ -1,6 +1,6 @@
 {
   "homepages": [],
-  "source_base_path": "C:/Users/caroline.sena.CURITIBA/source/docfx-github/Docfx/docfx_project",
+  "source_base_path": "/github/workspace/docfx_project",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -9,10 +9,10 @@
       "output": {
         ".html": {
           "relative_path": "api/index.html",
-          "hash": "ZhcUDdLbn6YMeQ+Ol7LCTw=="
+          "hash": "chMVT2GNoS+llUW8MtA2Wg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -21,7 +21,7 @@
       "output": {
         ".html": {
           "relative_path": "artigos/intro.html",
-          "hash": "sJkPHpDmvcK3P6Agi220fA=="
+          "hash": "PYxO5f1/xXlnArax9ip/hw=="
         }
       },
       "is_incremental": false,
@@ -33,7 +33,7 @@
       "output": {
         ".html": {
           "relative_path": "artigos/proxy.html",
-          "hash": "ypr0nI51YKrUMiWn4rCblw=="
+          "hash": "ZpUZPRzV56JTbVNEv/QSiQ=="
         }
       },
       "is_incremental": false,
@@ -45,7 +45,7 @@
       "output": {
         ".html": {
           "relative_path": "artigos/toc.html",
-          "hash": "txqITzh+ov6n9OlgzqRsoQ=="
+          "hash": "By04YV7/pGBntBIgiko8tA=="
         }
       },
       "is_incremental": false,
@@ -57,7 +57,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "w1NsgOeJq2aFJ/RJIim32A=="
+          "hash": "3A1RtBv5yygw3tJ6o6qdfQ=="
         }
       },
       "is_incremental": false,
@@ -69,7 +69,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "E/OUlH2uXDaDoroMh/8ahA=="
+          "hash": "lE+gxqVsX1XHi4Jc577FKA=="
         }
       },
       "is_incremental": false,
@@ -79,34 +79,27 @@
   "incremental_info": [
     {
       "status": {
-        "can_incremental": true,
-        "incrementalPhase": "build",
-        "total_file_count": 0,
-        "skipped_file_count": 0
+        "can_incremental": false,
+        "details": "Cannot build incrementally because last build info is missing.",
+        "incrementalPhase": "build"
       },
       "processors": {
         "TocDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build",
-          "total_file_count": 0,
-          "skipped_file_count": 0
+          "incrementalPhase": "build"
         },
         "ConceptualDocumentProcessor": {
-          "can_incremental": true,
-          "incrementalPhase": "build",
-          "total_file_count": 4,
-          "skipped_file_count": 3
+          "can_incremental": false,
+          "incrementalPhase": "build"
         }
       }
     },
     {
       "status": {
-        "can_incremental": true,
-        "details": "Can support incremental post processing.",
-        "incrementalPhase": "postProcessing",
-        "total_file_count": 0,
-        "skipped_file_count": 0
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: last post processor info is null.",
+        "incrementalPhase": "postProcessing"
       },
       "processors": {}
     }
