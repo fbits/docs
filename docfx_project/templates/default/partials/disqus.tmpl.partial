@@ -7,7 +7,7 @@
 
 var disqus_config = function () {
 this.page.url = '{{docurl}}';  // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = '{{_tocPath}}'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+this.page.identifier = '{{docurl}}'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
 };
 
 (function() { // DON'T EDIT BELOW THIS LINE
