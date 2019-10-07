@@ -7,28 +7,22 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: DocFX - Build documentation
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        GITHUB_REPOSITORY: ${{ secrets.GITHUB_REPOSITORY }}
-        GITHUB_ACTOR: ${{ secrets.GITHUB_ACTOR }}
       run: |
         bash ./actions/build.sh
       shell: pwsh
     - name: DocFX - Commit
       env:
-        GH_EMAIL: ${{ secrets.GH_EMAIL }}
-        GH_USER: ${{ secrets.GH_USER }}
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         GITHUB_REPOSITORY: ${{ secrets.GITHUB_REPOSITORY }}
         GITHUB_ACTOR: ${{ secrets.GITHUB_ACTOR }}
       run: |
-        bash ./actions/push/entrypoint.sh
+        bash ./actions/commit.sh
     - name: DocFX - Push
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run:
         bash ./actions/push.sh
-    - name: Deploy
+    - name: DocFX - Deploy
       env:
         ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
         PUBLISH_BRANCH: gh-pages
