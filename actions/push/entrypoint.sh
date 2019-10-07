@@ -1,5 +1,8 @@
 #!/bin/sh -l
 
+apt-get update
+apt-get install -y git
+
 remote_repo="https://${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
 remote_branch="master"
 git init
