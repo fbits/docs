@@ -2,3 +2,5 @@
   href: intro.md
 - name: Integração com o Proxy
   href: proxy.md
+- name: Integração com o Login
+  href: oauth.md
