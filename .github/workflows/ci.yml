@@ -1,4 +1,8 @@
-on: push
+on:
+  push:
+    paths:
+    - 'docfx_project/**'
+    - '.github/workflows/**'
 name: Documentation Generation Workflow
 jobs:
   docFX-GenerateDocumentation:
