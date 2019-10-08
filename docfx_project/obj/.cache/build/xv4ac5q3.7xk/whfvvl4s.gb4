@@ -1,13 +1,13 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <!--[if IE]><![endif]-->
 <html>
 	
 	<head>
 	  <meta charset="utf-8">
 	  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	  <title> </title>
+	  <title>Introdu&#231;&#227;o </title>
 	  <meta name="viewport" content="width=device-width">
-	  <meta name="title" content=" ">
+	  <meta name="title" content="Introdu&#231;&#227;o ">
 	  <meta name="generator" content="docfx 2.39.1.0">
 	  
 	  <link rel="shortcut icon" href="../favicon.ico">
@@ -84,8 +84,10 @@
 </div>
                 <body>
 
+	<h1 id="introdução" sourcefile="artigos/intro.md" sourcestartlinenumber="1">Introdução</h1>
 	
-	
+<p sourcefile="artigos/intro.md" sourcestartlinenumber="3">teste123</p>
+
 
 </body></article>
             <div class="col-md-10">
@@ -98,7 +100,7 @@
             
             var disqus_config = function () {
             this.page.url = location.href;  // Replace PAGE_URL with your page's canonical URL variable
-            this.page.identifier = 'https://github.com/carolinesena/Docfx/blob/2146a11b3ceb5a7fa01b4b56024f0e2dafdfc675/docfx_project/artigos/oauth.md/#L1'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+            this.page.identifier = 'https://github.com/carolinesena/Docfx/blob/b58707e891ccd1ed1fc5e2e0cc1e594a8739c63b/docfx_project/artigos/intro.md/#L1'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
             };
             
             (function() { // DON'T EDIT BELOW THIS LINE
@@ -128,7 +130,7 @@
               </div>
               </div>      <ul class="nav">
                   <li>
-                    <a href="https://github.com/carolinesena/Docfx/blob/2146a11b3ceb5a7fa01b4b56024f0e2dafdfc675/docfx_project/artigos/oauth.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/carolinesena/Docfx/blob/b58707e891ccd1ed1fc5e2e0cc1e594a8739c63b/docfx_project/artigos/intro.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
