@@ -1,4 +1,4 @@
-
+﻿
 <div id="sidetoggle">
   <div>
     <div class="sidefilter">
@@ -16,6 +16,9 @@
                 </li>
                 <li>
                     <a href="proxy.html" name="" title="Integra&#231;&#227;o com o Proxy">Integra&#231;&#227;o com o Proxy</a>
+                </li>
+                <li>
+                    <a href="oauth.html" name="" title="Integra&#231;&#227;o com o Login">Integra&#231;&#227;o com o Login</a>
                 </li>
           </ul>
       </div>
