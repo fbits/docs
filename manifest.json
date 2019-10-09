@@ -9,7 +9,7 @@
       "output": {
         ".html": {
           "relative_path": "api/index.html",
-          "hash": "yvLE7KJGV16NtyKuBD0YvA=="
+          "hash": "QG/jY3e/7LjGjfV/CnzrUw=="
         }
       },
       "is_incremental": false,
@@ -21,7 +21,7 @@
       "output": {
         ".html": {
           "relative_path": "artigos/intro.html",
-          "hash": "LiSW17EhwbOcJ2BraEGv4w=="
+          "hash": "2xnpF+tDM39jnxQsG8Ov2A=="
         }
       },
       "is_incremental": false,
@@ -33,7 +33,7 @@
       "output": {
         ".html": {
           "relative_path": "artigos/oauth.html",
-          "hash": "tMl2uEkw5x/ipzi0Q5ZIyA=="
+          "hash": "Iq1q4UPCK/RBpACvfYhzgg=="
         }
       },
       "is_incremental": false,
@@ -45,7 +45,7 @@
       "output": {
         ".html": {
           "relative_path": "artigos/proxy.html",
-          "hash": "S+6RsTSRbIh9wXw2E431+w=="
+          "hash": "74aX1AIL7DlIq3o00rPrnw=="
         }
       },
       "is_incremental": false,
@@ -64,12 +64,12 @@
       "version": ""
     },
     {
-      "type": "Conceptual",
+      "type": "index",
       "source_relative_path": "index.md",
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "wtwXxWPiSWrwWETxQXWtew=="
+          "hash": "jkKXhyoEPXoecQavc5Bycw=="
         }
       },
       "is_incremental": false,
