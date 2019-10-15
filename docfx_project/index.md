@@ -17,9 +17,9 @@ documentType: index
   <div class="container">
     <div class="row">
       <div class="col-md-8 col-md-offset-2 text-center">
-        <i class="glyphicon glyphicon-ok"></i>
+        <!--<i class="glyphicon glyphicon-ok"></i>-->
         <section>
-          <p class="lead">Aqui você encontra informações sobre ...</p>
+          <p class="lead">No menu Artigos, você encontra informações sobre os serviços de Autenticação, Proxy entre outros. Esses artigos são escritos em Markdown e você pode acessá-los no Github e sugerir mudanças. Você também pode deixar seu comentário sobre o que achou da documentação.</p>
         </section>
       </div>
     </div>
