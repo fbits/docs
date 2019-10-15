@@ -9,7 +9,7 @@ documentType: index
       <strong>Documentação Técnica Traycorp</strong>
     </div>
     <div class="minitext">
-    
+    Documentação dos serviços oferecidos pela Traycorp, com exemplos e referências de utilização e demais informações úteis aos usuários.
     </div>
   </div>
 </div>
@@ -19,7 +19,7 @@ documentType: index
       <div class="col-md-8 col-md-offset-2 text-center">
         <i class="glyphicon glyphicon-ok"></i>
         <section>
-          <p class="lead">Documentação sobre serviços, com exemplos de utilização e demais informações úteis aos usuários.</p>
+          <p class="lead">Aqui você encontra informações sobre ...</p>
         </section>
       </div>
     </div>
