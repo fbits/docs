@@ -28,7 +28,7 @@ window.addEventListener('load', function() {
 
 	var pathSplit = path.split("/");
 	var file = '';
-	if (pathSplit[1] === "Docfx"){
+	if (pathSplit[1] === "docs"){
 		pathSplit.splice(1,1);
 		file = pathSplit.join("/").split(".").shift();
 	}
@@ -48,7 +48,7 @@ window.addEventListener('load', function() {
 	Obtém a data do commit mais recente através da api do github.
 ***************************************************************************************************/
 function getLastUpdateDate(file, request){
-	request.open('GET', 'https://api.github.com/repos/carolinesena/Docfx/commits?path=docfx_project' + file + '.md', true);
+	request.open('GET', 'https://api.github.com/repos/fbits/docs/commits?path=docfx_project' + file + '.md', true);
     request.onload = function () {
         var data = JSON.parse(this.response);
 
@@ -73,7 +73,7 @@ function getContributors(file, request){
 
 	contributors_list = [];
 
-    request.open('GET', 'https://api.github.com/repos/carolinesena/Docfx/commits?path=docfx_project' + file + '.md', true)
+    request.open('GET', 'https://api.github.com/repos/fbits/docs/commits?path=docfx_project' + file + '.md', true)
     request.onload = function () {
         var data = JSON.parse(this.response);
 
@@ -103,7 +103,7 @@ function getContributors(file, request){
 	request.send();
 	
 	var listContrib = document.getElementById('contributors');
-	listContrib.setAttribute("href", 'https://github.com/carolinesena/Docfx/tree/master/docfx_project' + file + '.md');
+	listContrib.setAttribute("href", 'https://github.com/fbits/docs/tree/master/docfx_project' + file + '.md');
 	listContrib.appendChild(list);
 }
 
