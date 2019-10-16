@@ -1,6 +1,6 @@
 {
   "homepages": [],
-  "source_base_path": "/home/runner/work/Docfx/Docfx/docfx_project",
+  "source_base_path": "/home/runner/work/docs/docs/docfx_project",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -9,7 +9,7 @@
       "output": {
         ".html": {
           "relative_path": "api/index.html",
-          "hash": "ZdPfnqkNUSa4kdQJTk6Haw=="
+          "hash": "rfn93NO52I+CkUsfmHlZWw=="
         }
       },
       "is_incremental": false,
@@ -21,7 +21,7 @@
       "output": {
         ".html": {
           "relative_path": "artigos/intro.html",
-          "hash": "q4LI2jwVzNEfA3ccOXw+tQ=="
+          "hash": "gEgDearr6XNWP3r5u90zUA=="
         }
       },
       "is_incremental": false,
@@ -33,7 +33,7 @@
       "output": {
         ".html": {
           "relative_path": "artigos/oauth.html",
-          "hash": "IaUsETEe8hwdkvRM8vPUvw=="
+          "hash": "3AIpXITSjmwiO9K71fjHCQ=="
         }
       },
       "is_incremental": false,
@@ -45,7 +45,7 @@
       "output": {
         ".html": {
           "relative_path": "artigos/proxy.html",
-          "hash": "NHvYhF6par8dSy+k4fuqbg=="
+          "hash": "cTO8fOxYRp0ZFkx1aLYSOg=="
         }
       },
       "is_incremental": false,
